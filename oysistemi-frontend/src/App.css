@@ -1,0 +1,236 @@
+body {
+  background: linear-gradient(110deg, #b2f0f5 0%, #accbee 100%);
+  min-height: 100vh;
+}
+
+.app-container {
+  max-width: 600px;
+  margin: 30px auto 0 auto;
+  padding: 25px 0 35px 0;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 6px 30px rgba(100, 120, 150, 0.08);
+}
+
+.main-title {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.address-bar {
+  background: #e6f6f2;
+  border-radius: 10px;
+  margin: 0 18px 18px 18px;
+  padding: 8px 0 6px 0;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.info-banner {
+  background: #fff3cd;
+  border: 1px solid #ffe066;
+  color: #856404;
+  padding: 10px 0;
+  border-radius: 8px;
+  margin: 12px 18px;
+  text-align: center;
+  font-size: 1.08rem;
+  font-weight: 600;
+}
+
+.connect-btn {
+  display: block;
+  margin: 32px auto;
+  padding: 11px 36px;
+  background: #047a8c;
+  color: #fff;
+  font-size: 1.14rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.19s;
+  font-weight: 600;
+}
+
+.connect-btn:hover {
+  background: #005b6c;
+}
+
+.candidates-wrapper {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  margin-bottom: 32px;
+  margin-top: 8px;
+}
+
+.candidate-card {
+  background: #f9fbfa;
+  border: 1.5px solid #e0f3f7;
+  border-radius: 14px;
+  width: 220px;
+  padding: 20px 10px 24px 10px;
+  text-align: center;
+  box-shadow: 0 1px 10px rgba(100, 120, 150, 0.04);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.circle-photo {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 7px;
+  border: 3px solid #49c5ba;
+  background: #f4fefe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.circle-photo img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+}
+
+.candidate-title {
+  font-size: 1.23rem;
+  font-weight: bold;
+  margin: 7px 0 7px 0;
+}
+
+.vote-count {
+  background: #caf6f3;
+  color: #127474;
+  border-radius: 7px;
+  padding: 6px 15px 6px 15px;
+  margin-bottom: 7px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.vote-btn {
+  padding: 9px 23px;
+  background: #127474;
+  color: #fff;
+  font-size: 1.06rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 5px;
+  transition: background 0.17s;
+  font-weight: 600;
+}
+.vote-btn:hover {
+  background: #085757;
+}
+
+.results-section {
+  margin: 0 auto 22px auto;
+  padding: 25px 0 15px 0;
+  width: 92%;
+  background: #e8f6f2;
+  border-radius: 13px;
+  box-shadow: 0 1px 10px rgba(100, 120, 150, 0.04);
+  text-align: center;
+}
+
+.show-results-btn {
+  background: #388489;
+  color: #fff;
+  padding: 8px 25px;
+  border: none;
+  border-radius: 7px;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 14px;
+  cursor: pointer;
+  transition: background 0.13s;
+}
+.show-results-btn:hover {
+  background: #166c71;
+}
+
+.bar-chart-area {
+  margin: 18px 0 0 0;
+}
+
+.bar-chart {
+  margin: 18px auto 12px auto;
+  width: 95%;
+  max-width: 370px;
+}
+.bar-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 11px;
+}
+.bar-label {
+  width: 60px;
+  font-weight: 600;
+  text-align: left;
+  color: #245454;
+}
+.bar-outer {
+  flex: 1;
+  background: #e6ecea;
+  border-radius: 6px;
+  height: 25px;
+  margin: 0 12px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.bar {
+  height: 25px;
+  border-radius: 6px;
+}
+.bar.aday1 {
+  background: #3dd1a4;
+  transition: width 0.6s;
+}
+.bar.aday2 {
+  background: #3993dd;
+  transition: width 0.6s;
+}
+.bar-votes {
+  width: 85px;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.end-btn {
+  display: block;
+  margin: 0 auto;
+  background: #ffa23a;
+  color: #fff;
+  padding: 12px 33px;
+  border: none;
+  border-radius: 9px;
+  font-size: 1.15rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.18s;
+}
+.end-btn:hover {
+  background: #ee7e16;
+}
+
+.loading-spinner {
+  border: 7px solid #caf6f3;
+  border-top: 7px solid #127474;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1.1s linear infinite;
+  margin: 20px auto 0 auto;
+  display: block;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg);}
+  100% { transform: rotate(360deg);}
+}
